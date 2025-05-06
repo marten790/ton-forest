@@ -12,7 +12,7 @@ export default function Page() {
         <h1 className="text-2xl font-bold text-emerald-400 mb-4">Mystical Mushroom Forest</h1>
         <p>Loading user data...</p>
         <p className="text-sm text-gray-400 mt-2">
-          If this doesn't load please make sure you're opening the app from inside Telegram.
+          If this doesnt load please make sure youre opening the app from inside Telegram.
         </p>
 
         <div className="mt-6 bg-gray-800 p-4 rounded-md w-full max-w-md text-left text-xs">
@@ -25,11 +25,8 @@ export default function Page() {
         </div>
 
         <div className="mt-4 bg-gray-800 p-3 rounded text-left text-xs w-full max-w-md text-gray-300">
-          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
           <div>window.Telegram: {typeof window !== 'undefined' && (window as any).Telegram ? '✅' : '❌'}</div>
-          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
           <div>Telegram.WebApp: {typeof window !== 'undefined' && (window as any).Telegram?.WebApp ? '✅' : '❌'}</div>
-          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
           <div>initDataUnsafe: {typeof window !== 'undefined' && (window as any).Telegram?.WebApp?.initDataUnsafe ? '✅' : '❌'}</div>
         </div>
       </div>

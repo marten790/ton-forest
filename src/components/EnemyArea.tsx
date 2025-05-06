@@ -15,7 +15,7 @@ const EnemyArea = ({ enemy, onAttack }: EnemyAreaProps) => {
   // Set enemy image based on enemy type
   useEffect(() => {
     // Placeholder images based on enemy type
-    const placeholderSize = 400;
+    // const placeholderSize = 400;
     
     // Use different placeholder images based on enemy id
     const imageIndex = (enemy.id % 5) + 1;
