@@ -18,8 +18,8 @@ const EnemyArea = ({ enemy, onAttack }: EnemyAreaProps) => {
     // const placeholderSize = 400;
     
     // Use different placeholder images based on enemy id
-    const imageIndex = (enemy.id % 5) + 1;
-    setEnemyImage(`/${imageIndex}.png`);
+    // const imageIndex = (enemy.id % 5) + 1;
+    setEnemyImage(`/${enemy.id}.png`);
   }, [enemy.id]);
   
   // Calculate health percentage for progress bar
